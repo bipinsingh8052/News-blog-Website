@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Blog</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <!-- link the bootstrap file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- link the bootstrap icon cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#" id="navicon">BLOG 2.0</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="mainpage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Default</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" id="searchnav">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- navbar -->
+    <!--banner   -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" id="banner">
+        <div class="carousel-item active" id="bannerimg">
+          <img src="https://images.indianexpress.com/2024/02/pv-rao-6.jpg?w=475" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Breaking News
+            </h5>
+            <p>Bharat Ratna for Narasimha Rao: Congress’s Achilles heel, the PM it 'forgot'.</p>
+            <a href="#" class="btn btn-primary" data-bs-target="#subscribebtn"  data-bs-toggle="modal">
+              <i class="bi bi-envelope-arrow-down"></i>
+              Subscribe for news  Channel
+            </a>
+          </div>
+        </div>
+        <div class="carousel-item" id="bannerimg2">
+          <img src="https://www.hindustantimes.com/ht-img/img/2024/02/09/550x309/PTI01-27-2024-000032A-0_1707465869054_1707465900304.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Breaking News</h5>
+            <p>Ravindra Jadeja fumes at father, calls his 'nonsense' allegations 'attempt to tarnish wife Rivaba's image'
+              .</p>
+              <a href="#" class="btn btn-primary" data-bs-target="#subscribebtn"  data-bs-toggle="modal">
+                <i class="bi bi-envelope-arrow-down"></i>
+                Subscribe for news Channel
+              </a>
+          </div>
+        </div>
+        <div class="carousel-item" id="bannerimg3">
+          <img src="https://www.hindustantimes.com/ht-img/img/2024/02/09/550x309/PTI07-13-2023-000114B-0_1689657263923_1707476267513.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Breaking News</h5>
+            <p>Prithvi Shaw set for road to redemption with fiery century in Mumbai's Ranji Trophy match, reaches ton before Lunch
+              .</p>
+              <a href="#" class="btn btn-primary" data-bs-target="#subscribebtn" data-bs-toggle="modal">
+                <i class="bi bi-envelope-arrow-down"></i>
+                Subscribe for news Channel
+              </a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- banner  -->
+    <!-- Card list /post list -->
+    <div class="container-fluid" >
+      <div class="row py-4 px-4 " style="background: linear-gradient(180deg,rgb(209, 64, 31) ,rgb(43, 10, 131));">
+        <div class="col-md-5 col-sm-6 col-lg-4 col-xl-3 py-4 ">
+          <div class="card shadow " style="width: 100;">
+            <img src="https://images.indianexpress.com/2024/02/pak-polls_029298.jpg?w=430" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pak polls Live: Nation needs stable hands to move on from the politics of anarchy and polarisation, says Army chief</h5>
+              <p class="card-text">Nawaz Sharif’s party has won the most seats by a single party in Thursday’s election, but supporters of Imran Khan, whose party backed independents instead of running as a single bloc, won the most seats overall.</p>
+              <a href="https://indianexpress.com/" class="btn btn-warning shadow-md">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 col-lg-4 col-xl-3 py-4">
+          <div class="card shadow " style="width: 100;">
+            <img src="https://www.hindustantimes.com/ht-img/img/2024/02/10/550x309/ANI-20240207405-0_1707354032734_1707535802018.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Budget Session LIVE: Congress ‘insulting’ Charan Singh's legacy, says Rajya Sabha chair Jagdeep Dhankhar</h5>
+              <p class="card-text"><strong> Session LIVE:</strong> The ongoing budget session of Parliament will conclude on Saturday – it was extended by a day – with this being the final sitting before the upcoming Lok Sabha polls, due in April-May. The budget session.</p>
+              <a href="https://indianexpress.com/" class="btn btn-warning shadow-md">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 col-lg-4 col-xl-3 py-4 px-2">
+          <div class="card shadow " style="width:100;">
+            <img src="https://www.hindustantimes.com/ht-img/img/2024/02/10/550x309/TOPSHOT-PAKISTAN-POLITICS-VOTE-0_1707540998896_1707541044267.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pakistan election: Shehbaz Sharif, Bilawal Bhutto-Zardari agree to form govt; all eyes on Imran Khan, says report</h5>
+              <p class="card-text">The Pakistan Muslim League-Nawaz (PML-N) and Pakistan Peoples Party (PPP) have agreed to form a coalition government at the Centre and Punjab province after Shehbaz Sharif met Bilawal Bhutto and former president Asif Ali Zardari.</p>
+              <a href="https://indianexpress.com/" class="btn btn-warning shadow-md">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 col-lg-4 col-xl-3 py-4">
+          <div class="card shadow " style="width:100;">
+            <img src="https://www.hindustantimes.com/ht-img/img/2024/02/10/550x309/Mahesh_Babu_Daughter_Sitara_Victim_to_Cyberc_1707548630863_1707548631061.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mahesh Babu's team issues warning about daughter Sitara's fake Instagram account; probe on</h5>
+              <p class="card-text">Mahesh Babu and Namrata Shirodkar's daughter Sitara Ghattamaneni has fallen prey to a 'cybercrime incident'. As per the team's official statement on Instagram, an unknown person has created Sitara's fake account on Instagram and has been .</p>
+              <a href="https://indianexpress.com/" class="btn btn-warning shadow-md">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 col-lg-4 col-xl-3 py-4">
+          <div class="card shadow " style="width:100;">
+            <img src="https://www.hindustantimes.com/ht-img/img/2024/02/10/550x309/Union-home-minister-Amit-Shah-addresses-the-valedi_1707073200685_1707549751756.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Amit Shah says CAA will be implemented before 2024 Lok Sabha elections</h5>
+              <p>Union home minister Amit Shah on Saturday said that the Citizenship Amendment Act (CAA) will be notified and implemented before the upcoming Lok Sabha election. The act was passed by the Parliament in December 2019 . Amit shah sayed to all</p>             
+               <a href="https://indianexpress.com/" class="btn btn-warning shadow-md">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 col-lg-4 col-xl-3 py-4">
+          <div class="card shadow " style="width:100;">
+            <img src="https://www.hindustantimes.com/ht-img/img/2024/02/10/550x309/Lal_Salaam_1707529761311_1707529787424.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lal Salaam box office collection day 1: Rajinikanth-starrer opens with ₹4.3 crore haul in India</h5>
+              <p class="card-text">Lal Salaam box office collection day 1: Directed by Aishwarya Rajinikanth, the cast of the sports drama includes her father, veteran actor Rajinikanth. As per a report by Sacnilk.com, Lal Salaam opened to an estimated ₹4.3 crore.</p>
+              <a href="https://indianexpress.com/" class="btn btn-warning shadow-md">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 col-lg-4 col-xl-3 py-4">
+          <div class="card shadow " style="width:100;">
+            <img src="https://www.hindustantimes.com/ht-img/img/2024/02/09/550x309/branch-kolkata-phones-front-checks-state-mobile_6dd36522-b53b-11ea-b3b3-7b919605787e_1707466205618.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pak polls Live: Nation needs stable hands to move on from the politics of anarchy and polarisation, says Army chief</h5>
+              <p class="card-text">Nawaz Sharif’s party has won the most seats by a single party in Thursday’s election, but supporters of Imran Khan, whose party backed independents instead of running as a single bloc, won the most.</p>
+              <a href="https://indianexpress.com/" class="btn btn-warning shadow-md">Read More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 col-lg-4 col-xl-3 py-4">
+          <div class="card shadow " style="width:100;">
+            <img src="https://www.hindustantimes.com/ht-img/img/2024/02/09/550x309/The-framework--which-was-released-by-the-ministry-_1705691666139_1707462393878.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                Board Exam 2024 Live: JAC 10th, 12th, BSEB Inter & WBBSE Madhyamik exams today</h5>
+              <p class="card-text"><strong>Board Exam 2024 Live: </strong>Bihar, Jharkhand, West Bengal have already commenced Board Exam 2024. BSEB 12th examination started on February 1 and will end on February 12, 2024. West Bengal Board of Secondary Education .</p>
+              <a href="https://indianexpress.com/" class="btn btn-warning shadow-md">Read More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- footer main -->
+   
+    <div class="row " id="footer">
+      <div class="col-12 text-center w-100">
+        <h5>Copyright &copy; 2022. All Rights Reserved</h5>
+      </div>
+    </div>
+
+  <!-- footer main -->
+    </div>
+    <!-- Card list /post list -->
+
+
+    <!-- model of Subscribe btn -->
+    <div class="modal fade" id="subscribebtn" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h1 class="modal-title fs-5 " id="exampleModalToggleLabel">Subscribe for newsletters</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row mx-3">
+                <div class="col-6 my-2">
+                  <input type="text" class="form-control" placeholder="First Name" required>
+                </div>
+                <div class="col-6 my-2">
+                  <input type="text" class="form-control" placeholder="Last Name" required>
+                </div> 
+                <div class="col-12 my-2">
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-12 my-2">
+                  <button class="btn btn-danger text-white form-control" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">                <i class="bi bi-envelope-arrow-down"></i>
+                    Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- model of subrcribe btn -->
+
+
+     <!-- bootstrap file  -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+     "></script>
+</body>
+</html>

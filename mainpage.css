@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#nav{
+    background: linear-gradient(125deg,rgb(26, 26, 108),rgb(141, 141, 198));
+}
+#navicon{
+    color: rgb(181, 246, 116);
+}
+.nav-item>a{
+    margin-left: 20px;
+}
+#searchnav{
+    margin-right: 40px;
+}
+#searchnav>input{
+    outline: none;
+    border: none;
+}
+#searchnav>button{
+    background-color: rgb(145, 37, 73);
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+#searchnav>button:hover{
+    background-color: green;
+}
+.carousel-caption>h5{
+    color: rgb(87, 9, 9);
+}
+.carousel-caption>p{
+    color: rgb(45, 8, 119);
+}
+#banner{
+    height: 300px !important;
+    /* background-color: yellowgreen; */
+}
+#bannerimg,#bannerimg2,#bannerimg3{
+    height: 100%;
+}
+#bannerimg>img,#bannerimg2>img,#bannerimg3>img{
+    height: 100%;
+}
+
+.card{
+    border: none !important;
+    outline: none;
+}
+#footer{
+    height: 80px;
+    width: 102%;
+    background: linear-gradient(135deg,rgb(51, 34, 34),rgb(43, 25, 25));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
